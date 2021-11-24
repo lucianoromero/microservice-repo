@@ -1,7 +1,8 @@
 spring:
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/arthur-alura/microservice-repo
-          search-paths: fornecedor
+ datasource:
+     password:
+     username: root
+     url: 'jdbc:mysql://localhost:3306/fornecedor'
+   jpa:
+     hibernate:
+       ddl-auto: create
